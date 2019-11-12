@@ -4,7 +4,9 @@
   "description": "Full Stack Application (MERN)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev-bundle": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,18 @@
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
     "express": "^4.17.1",
+    "mongodb": "^3.3.4",
+    "prettier": "^1.19.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "nodemon": "^1.19.4"
   }
 }
