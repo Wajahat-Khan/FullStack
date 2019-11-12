@@ -1,0 +1,32 @@
+{
+  "name": "FullStack",
+  "version": "1.0.0",
+  "description": "Full Stack Application (MERN)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wajahat-Khan/FullStack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wajahat-Khan/FullStack/issues"
+  },
+  "homepage": "https://github.com/Wajahat-Khan/FullStack#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
