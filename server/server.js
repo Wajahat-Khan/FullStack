@@ -1,7 +1,7 @@
 import express from 'express'
 import config from '../config.js'
 import fs, { readdirSync } from 'fs'
-import apiRouter from '../../api'
+import apiRouter from '../api'
 
 const server=express()
 
@@ -11,13 +11,7 @@ server.get('/',(req,res)=>{
 });
 
 server.set('view engine', 'ejs')
-// server.get('/about.html',(req,res)=>{
-//   fs.readFile('./src/about.html',(err,data)=>{
-    
-//     res.send(data.toString());
-//   })
 
-// })
 server.use('/api',apiRouter);
 server.listen(config.port,()=>{
   console.log('listening to port', config.port);
