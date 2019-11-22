@@ -10,9 +10,7 @@ server.get('/',(req,res)=>{
 
 server.get('/about.html',(req,res)=>{
   fs.readFile('./src/about.html',(err,data)=>{
-    if (err) {
-      throw err;
-  }
+  
     res.send(data.toString());
   })
 
