@@ -27,6 +27,7 @@
     "babel-loader": "^8.0.6",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
+    "json-loader": "^0.5.7",
     "mongodb": "^3.3.4",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
