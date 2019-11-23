@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
-    "dev-bundle": "webpack -wd"
+    "start": "nodemon --exec babel-node server/server.js --ignore dist/",
+    "dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
