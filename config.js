@@ -1,5 +1,7 @@
-const port=8080;
-
 export default {
-    port:port
+    port:8080,
+    Host:'0.0.0.0',
+    get serverUrl(){
+        return `http://${this.Host}:${this.port}`
+    }
 }

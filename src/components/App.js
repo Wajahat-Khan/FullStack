@@ -14,7 +14,8 @@ class App extends React.Component{
         resp=> this.setState({contests:resp.data.contests})
       ).catch(console.error)      
     }
-    componentWillUnmount(){}
+    componentWillUnmount(){
+    }
     render(){
     return(
         <div className="App">  

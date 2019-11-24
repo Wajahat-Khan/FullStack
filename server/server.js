@@ -17,9 +17,9 @@ server.get('/',(req,res)=>{
   res.render('index')
 });
 
-
+import '../serverRender';
 
 server.use('/api',apiRouter);
-server.listen(config.port,()=>{
+server.listen(config.port, config.Host,()=>{
   console.log('listening to port', config.port);
 })
