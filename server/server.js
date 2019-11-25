@@ -13,11 +13,22 @@ server.use(sassMiddleware({
 
 server.set('view engine', 'ejs')
 server.use(express.static('public'))
-server.get('/',(req,res)=>{
-  res.render('index')
-});
 
-import '../serverRender';
+
+
+import serverRender from '../serverRender';
+
+server.get('/',(req,res)=>{
+  serverRender()
+  .then(
+    content=>{
+      res.render('index', {
+        content
+      })
+    }
+  ).catch(console.error)
+  
+});
 
 server.use('/api',apiRouter);
 server.listen(config.port, config.Host,()=>{

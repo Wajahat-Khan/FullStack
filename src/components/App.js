@@ -5,11 +5,13 @@ import axios from 'axios';
 
 
 class App extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={pageHeader:"Naming Contest", contests:[]}
-    }
-    componentDidMount(){
+ 
+state = 
+    {
+      pageHeader:"Naming Contest", 
+      contests : this.props.initialContests
+    };
+      componentDidMount(){
       axios.get('/api/contests').then(
         resp=> this.setState({contests:resp.data.contests})
       ).catch(console.error)      
