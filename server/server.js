@@ -21,9 +21,9 @@ import serverRender from '../serverRender';
 server.get('/',(req,res)=>{
   serverRender()
   .then(
-    content=>{
+    ({ initialMarkup, initialData})=>{
       res.render('index', {
-        content
+        initialMarkup,initialData
       })
     }
   ).catch(console.error)
