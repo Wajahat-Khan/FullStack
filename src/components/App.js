@@ -21,8 +21,7 @@ state =
         <div className="App">  
           <Header message={this.state.pageHeader} />
           <ContestList 
-          onContestClick={this.fetchContest}
-          contest={this.state.contests} />
+          onContestClick={this.fetchContest} contests={this.state.contests} />
         </div>
         )
   }
