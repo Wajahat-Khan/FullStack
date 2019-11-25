@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 
 class ContestPreview extends Component {
     handleClick=()=>{
-        console.log(this.props.categoryName)
+        this.props.onClick(this.props.id);
     }
     render() {
         return (
@@ -24,6 +24,8 @@ class ContestPreview extends Component {
 
 ContestPreview.propTypes={
 categoryName: PropTypes.string.isRequired,
-contestName: PropTypes.string.isRequired
+contestName: PropTypes.string.isRequired,
+onClick: PropTypes.func.isRequired,
+id:PropTypes.number
 }
 export default ContestPreview;
